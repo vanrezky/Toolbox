@@ -1,0 +1,5 @@
+{
+  "name": "Developer Productivity Toolbox",
+  "description": "A collection of essential developer tools including ABN/ACN generators, hashing utilities, JSON formatter, and thumbnail generator.",
+  "requestFramePermissions": []
+}
