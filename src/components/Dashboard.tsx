@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock } from 'lucide-react';
+import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock, Shield } from 'lucide-react';
 
 interface Tool {
   id: string;
@@ -23,6 +23,13 @@ const tools: Tool[] = [
     description: 'Generate valid Australian Company Numbers with checksum validation.',
     icon: Building2,
     color: 'bg-blue-500',
+  },
+  {
+    id: 'bcrypt',
+    name: 'Bcrypt Tool',
+    description: 'Generate and verify Bcrypt hashes with custom salt rounds.',
+    icon: Shield,
+    color: 'bg-violet-500',
   },
   {
     id: 'sha1',
