@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Layout } from './components/Layout';
 import { Dashboard } from './components/Dashboard';
 import { AbnGenerator } from './components/tools/AbnGenerator';
@@ -90,6 +91,7 @@ export default function App() {
       onBack={currentTool ? () => setCurrentTool(null) : undefined}
     >
       {renderTool()}
+      <SpeedInsights />
     </Layout>
   );
 }
