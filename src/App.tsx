@@ -3,6 +3,7 @@ import { Layout } from './components/Layout';
 import { Dashboard } from './components/Dashboard';
 import { AbnGenerator } from './components/tools/AbnGenerator';
 import { AcnGenerator } from './components/tools/AcnGenerator';
+import { UuidGenerator } from './components/tools/UuidGenerator';
 import { BcryptTool } from './components/tools/BcryptTool';
 import { Sha1Tool } from './components/tools/Sha1Tool';
 import { Md5Tool } from './components/tools/Md5Tool';
@@ -18,6 +19,8 @@ export default function App() {
         return <AbnGenerator />;
       case 'acn':
         return <AcnGenerator />;
+      case 'uuid':
+        return <UuidGenerator />;
       case 'bcrypt':
         return <BcryptTool />;
       case 'sha1':
@@ -39,6 +42,8 @@ export default function App() {
         return 'ABN Generator';
       case 'acn':
         return 'ACN Generator';
+      case 'uuid':
+        return 'UUID Generator';
       case 'bcrypt':
         return 'Bcrypt Tool';
       case 'sha1':

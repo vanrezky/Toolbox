@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock, Shield } from 'lucide-react';
+import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock, Shield, Fingerprint } from 'lucide-react';
 
 interface Tool {
   id: string;
@@ -23,6 +23,13 @@ const tools: Tool[] = [
     description: 'Generate valid Australian Company Numbers with checksum validation.',
     icon: Building2,
     color: 'bg-blue-500',
+  },
+  {
+    id: 'uuid',
+    name: 'UUID Generator',
+    description: 'Generate UUIDs (v1, v4) in bulk and export to text file.',
+    icon: Fingerprint,
+    color: 'bg-rose-500',
   },
   {
     id: 'bcrypt',
