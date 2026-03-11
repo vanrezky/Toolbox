@@ -5,6 +5,11 @@ import { AbnGenerator } from './components/tools/AbnGenerator';
 import { AcnGenerator } from './components/tools/AcnGenerator';
 import { UuidGenerator } from './components/tools/UuidGenerator';
 import { BcryptTool } from './components/tools/BcryptTool';
+import { EncoderDecoder } from './components/tools/EncoderDecoder';
+import { TimestampConverter } from './components/tools/TimestampConverter';
+import { JwtDebugger } from './components/tools/JwtDebugger';
+import { SqlFormatter } from './components/tools/SqlFormatter';
+import { RegexTester } from './components/tools/RegexTester';
 import { Sha1Tool } from './components/tools/Sha1Tool';
 import { Md5Tool } from './components/tools/Md5Tool';
 import { JsonTools } from './components/tools/JsonTools';
@@ -23,6 +28,16 @@ export default function App() {
         return <UuidGenerator />;
       case 'bcrypt':
         return <BcryptTool />;
+      case 'encoder':
+        return <EncoderDecoder />;
+      case 'timestamp':
+        return <TimestampConverter />;
+      case 'jwt':
+        return <JwtDebugger />;
+      case 'sql':
+        return <SqlFormatter />;
+      case 'regex':
+        return <RegexTester />;
       case 'sha1':
         return <Sha1Tool />;
       case 'md5':
@@ -46,6 +61,16 @@ export default function App() {
         return 'UUID Generator';
       case 'bcrypt':
         return 'Bcrypt Tool';
+      case 'encoder':
+        return 'Encoder/Decoder';
+      case 'timestamp':
+        return 'Timestamp Converter';
+      case 'jwt':
+        return 'JWT Debugger';
+      case 'sql':
+        return 'SQL Formatter';
+      case 'regex':
+        return 'RegEx Tester';
       case 'sha1':
         return 'SHA1 Generator';
       case 'md5':

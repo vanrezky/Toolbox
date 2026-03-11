@@ -6,7 +6,7 @@ import { useCopyToClipboard } from '../../hooks/useCopyToClipboard';
 export function UuidGenerator() {
   const [version, setVersion] = useState<'v1' | 'v4'>('v4');
   const [count, setCount] = useState<number>(1);
-  const [uuids, setUuids] = useState<string[]>([]);
+  const [uuids, setUuids] = useState<string[]>([uuidv4()]);
   const { isCopied, copyToClipboard } = useCopyToClipboard();
 
   const handleGenerate = () => {

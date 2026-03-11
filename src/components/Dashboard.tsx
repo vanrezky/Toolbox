@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock, Shield, Fingerprint } from 'lucide-react';
+import { Search, Hash, FileJson, Image as ImageIcon, Building2, Briefcase, Lock, Shield, Fingerprint, ArrowLeftRight, Clock, Key, Database, Code2 } from 'lucide-react';
 
 interface Tool {
   id: string;
@@ -37,6 +37,41 @@ const tools: Tool[] = [
     description: 'Generate and verify Bcrypt hashes with custom salt rounds.',
     icon: Shield,
     color: 'bg-violet-500',
+  },
+  {
+    id: 'encoder',
+    name: 'Encoder/Decoder',
+    description: 'Base64 and URL encoding/decoding for text and data.',
+    icon: ArrowLeftRight,
+    color: 'bg-indigo-600',
+  },
+  {
+    id: 'timestamp',
+    name: 'Timestamp Converter',
+    description: 'Convert Unix timestamps to human-readable dates and vice versa.',
+    icon: Clock,
+    color: 'bg-amber-500',
+  },
+  {
+    id: 'jwt',
+    name: 'JWT Debugger',
+    description: 'Decode and inspect JSON Web Tokens (JWT) payload and header.',
+    icon: Key,
+    color: 'bg-violet-600',
+  },
+  {
+    id: 'sql',
+    name: 'SQL Formatter',
+    description: 'Format and beautify SQL queries for multiple dialects.',
+    icon: Database,
+    color: 'bg-slate-600',
+  },
+  {
+    id: 'regex',
+    name: 'RegEx Tester',
+    description: 'Test and debug regular expressions with visual highlighting.',
+    icon: Code2,
+    color: 'bg-emerald-600',
   },
   {
     id: 'sha1',
